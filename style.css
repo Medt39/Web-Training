@@ -1,0 +1,85 @@
+:root{
+    --color: #e6f0f6;
+}
+body{
+    margin: 0px;
+    background-color: var(--color);
+}
+header{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(230, 240, 246);
+    display: flex;
+    align-items: center;
+    box-shadow: 0 3px 20px rgb(0, 0, 0,40%);
+}
+h1{
+    padding-left: 10px;
+    margin: 0px;
+    color: rgb(4, 87, 110);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+#rgb{
+    position:absolute;
+    left: 70%;
+    font-size: 22px;
+    font-family: 'Segoe UI';
+    color: rgb(37, 143, 147);
+    transition: transform .3s;
+
+    
+}
+#hex{
+    position:absolute;
+    left: calc(70% + 55px);
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(37, 143, 147);
+    transition: transform .3s;
+}
+#rgb:hover,#hex:hover{
+    color: #185c6f;
+    cursor: pointer;
+    text-decoration-line: overline;
+    transform: translateY(-10px);
+    
+}
+section{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 300px;
+    background-color: rgb(2, 33, 44);
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+button{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 60px;
+    border:3px solid #000000;
+    font-size: 25px;
+    border-radius: 13px;
+    background-color: rgb(230, 240, 246);
+    font-weight: 600;
+    transition: transform .3s;
+    
+}
+button:hover{
+    background-color:var(--color);
+    transform: scale(1.2) translateX(-40%);
+    
+}
+#hexValue{
+    color: var(--color);
+    font-size: 50px;
+    text-decoration-line: underline;
+}
